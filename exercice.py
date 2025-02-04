@@ -74,3 +74,55 @@ Description: Exercice 7
 Calculez le volume d’un parallélépipède dont la largeur, la longueur et la hauteur seront saisies au
 clavier.
 '''
+largeur = int(input("Entrez la largeur:"));
+longueur = int(input("Entrez la longueur:"));
+hauteur = int(input("Entrez la hauteur:"));
+volume = largeur * longueur * hauteur;
+
+print("Volume du parallélépipède: ", volume);
+
+# %%
+# Exercice: 8
+
+''' 
+Saisissez le prix unitaire HT d’un produit et la quantité commandée. Calculez le montant HT de la
+commande, appliquez une remise de 15% et calculez le prix TTC après avoir saisi le taux de TVA.
+'''
+prix_unitaire_HT = int(input("Entrez le prix unitaire HT:"));
+quantite = int(input("Entrez la quantité commandée:"));
+montant_HT = prix_unitaire_HT * quantite;
+montant_remise =montant_HT - (montant_HT *15/100);
+TVA = int(input("Entrez le taux de TVA:"));
+prix_TTC=montant_remise + (montant_remise*TVA/100);
+
+print("Prix TTC: ", prix_TTC);
+
+# %%
+# Exercice: 9
+
+'''
+Calculez la moyenne des notes d’un élève après avoir saisi les notes de français, de math, de
+géométrie et d’informatique.
+'''
+
+note_francais = int(input("Entrez la note de français:"));
+note_math = int(input("Entrez la note de math:"));
+note_geometrie = int(input("Entrez la note de géométrie:"));
+note_informatique = int(input("Entrez la note d'informatique:"));
+
+moyenne = (note_francais + note_math + note_geometrie + note_informatique)/4;
+
+print("Moyenne: ", moyenne);
+
+# %%
+# Exercice: 10
+
+'''
+Affichez une table de multiplication (jusqu’à 10) dont l’ordre (le nombre concerné) sera saisi au
+clavier.
+'''
+
+ordre = int(input("Entrez l'ordre:"));
+for i in range (1,11):
+    print(ordre,"*",i,"=",ordre*i);
+
